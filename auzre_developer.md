@@ -8,10 +8,10 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
     - IaaS: Infrastructure as a service, Cloud hosted infrastrctre like - server, database
     - Paas: Platform as a service, Cloud manged platform ready to develop and deploy application
   - Chracteristics of cloud:
-    - on demand self-serivce: colud service can be manged by a platfor fromanywhere: phone/PC/Tab
-    - broad network access: has access to broad network location
-    - Resource pooling: mutiple customer can share a hardware to reduce cost 
-    - Measured services: Different meansured seriveces, can be sclead up/down
+    - on demand self-serivce: colud service can be manged by a platform from anywhere: phone/PC/Tab
+    - broad network access: has access to broad network of location
+    - Resource pooling: multiple customers can share a hardware to reduce cost 
+    - Measured services: Different measured seriveces, can be scaled up/down
   - Deployment models:Public/ Private / Hybrid
 - Benefits of cloud:
   - Reduce data center cost: 
@@ -21,14 +21,23 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
     -  No power and cooling cost
   -  Pay for what you use
   -  Great performance
-  -  Automatic softwar or infrastucture updates
+  -  Automatic software or infrastucture updates
   -  SLAs 
-  -  Proffessional troubleshooting
-  -  Security no data loss
-  -  Scalability: can be sceled up when required
+  -  Proffessional troubleshooting in case of issues
+  -  Security and no data loss
+  -  Scalability: can be scaled up/down when required
   -  Elasticity: Dynamically grow and shrink resource
-  -  Global region: complaince with regional rules like GDPR
+  -  Global regions: compliance with regional rules like GDPR
 -  What is IaaS?
   -  On-demand access to server, datbases, firewall and networking
   -  Instanly build new hardware
-  -  
+  -  Provider of IaaS manages the servers, harddrives, networking, vitulisation and storage
+  -  Additional services like databases or message queuing 
+  -  Provision and manged over internet: dashbords, console
+  -  Client is responsible for system architecture, device configurartion, OS and software license and installation
+  -  IaaS is often reffered and lift and shift
+  -  Benifits:
+    -  zero or minmal changes to your applications
+    -  Easy to scale the infrastucture to meet the demand
+    -  Infrastucture monitoring is provided
+    -  
