@@ -1,5 +1,11 @@
 # 1. Design and implement data storage
 ## Design data storage structure
+- Overview/ prerequisites for data lake 
+  - Hadoop compatible: should work with hdfs and ADFS 
+  - Super set of POSIX permission sets: Can be configured using hive and spark
+  - Cost effective: using azure blob life cycle
+- Azure storage exoplorer: 
+  - OPtimized drives: Elstically sclae up and down 
 - file types for storage 
   - Azure blob: scalble object store for text and binariry data 
   - Azure file: file share for on premise deplyoments - network file system
