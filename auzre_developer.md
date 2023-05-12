@@ -35,9 +35,55 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
   -  Additional services like databases or message queuing 
   -  Provision and manged over internet: dashbords, console
   -  Client is responsible for system architecture, device configurartion, OS and software license and installation
-  -  IaaS is often reffered and lift and shift
-  -  Benifits:
+  -  IaaS is often reffered and lift and shift, beacause is closning of local insfrastructure
+  -  Benefits:
     -  zero or minmal changes to your applications
     -  Easy to scale the infrastucture to meet the demand
     -  Infrastucture monitoring is provided
-    -  
+    -  Loosely coupled to cloud provider; easy to transition to other provider
+    -  Eliminate up front cost of setting up a data center
+    -  Maintain direct access to servers and completer control of your data
+    -  Deploy new infrastructure in minites
+    -  Test ideas on rented hardware
+  -  List of IaaS providers
+    -  AWS
+    -  Microsoft Azure
+    -  Alibaba
+    -  Google Compute Engine
+    -  IBM SoftLayer
+    -  Rackspace
+-  SaaS
+  -   SaaS allows user to connect to and use cloud based apps over the internet
+  -   SaaS apps can have a native client too e.g. desktop dropbox app
+  -   Cloud provides creates the application and adds clud-friendly features
+  -   Saas vendor manage all potentional technical issues, such as data and server
+  -   Benefits:
+    -  No intial setup cost
+    -  Pay for what you use 
+    -  Updates are automatic
+    -  Cross-device compatibility
+    -  Accesible from any location
+-  Paas
+  -  It is on demand access to a cloud hosted platform to develop, run, maintain and manage applications targeted at developers and operational workers
+  -  It lets you concentrate on your application. Rather than thinking about how to strcture and configure VMs, storage and networks, a PaaS platforms offers prebuilt implementation of these services.
+  -  Like IaaS, PaaS includes infrastucture - server, storage, and networking. However, these peices are configured and managed by PaaS provider.
+  -  PaaS can also include middleware, development tools, business intelligence services and database system.
+  -  PaaS is design to support the complete web application life-cycle: building, testing, deplyoing, managing and updating.
+  -  DevOps tools fit into the category of PaaS.
+  -  Under IaaS we have Windows server OS whereas in PaaS we get Azure OS.
+  -  In case of RDBMS in IaaS we ahve SQL Server and PaaS has Azure SQL.
+  -  Hardware configuration in IaaS is specified by customer whereas in PaaS its is specified by Microsoft
+  -  In IaaS customer applies updates; in PaaS Microsoft applies updates
+  -  Business model: In IaaS customer buy server and licenses; in PaaS customer buy subscription to service.
+  -  Paas prviders: Azure, AWS- Elastice Beansstalk, Salesforce: Force.com or heroku, Google- App Engine, IBM- smart cloud, Pivotal- Cloud Foundry, Red Hat - open shift, CloudBees, Engine Yard
+  -  PaaS vendor provides one or more platforms upon which app and sevices can be bulit.
+-  SaaS or SEaaS : Services as a Service
+  -   Seriveces offered such as: address verification, Phone validation, Tax-rate calculation, SMS provider and so on
+  -   These are services that are provided by SEaaS providers.
+  -   Azure congnitive service fits into this category
+-  Surveying the cloud provider:
+  -  Criterial for choosing: markert share, revenue, fortune 500 client and most imporatnt one is performance in your desire serivce.
+  -  AWS is the leader in overall clude serivers but that not the case for every cloud niche services
+  -  Check leader under specific caltegry where you want toinvest like  IaaS/SaaS/PaaS/SEaaS
+## Azure Basics
+
