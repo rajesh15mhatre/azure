@@ -87,3 +87,93 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
   -  Check leader under specific caltegry where you want toinvest like  IaaS/SaaS/PaaS/SEaaS
 ## Azure Basics
 
+- Subscription: Its a subscription based service for different areas:
+  - Azure business can get Azure by:
+    -  Sign up on portal
+    -  Add Azure to existing enterprise aggrement
+    -  Microsoft cloud solution provider
+  - Azur for US government:
+    -   Buy through Azure government licennsing provider
+    -   Available with no upfront payment options
+    -   Available for fedral, state, local and tribal government agencies
+  - For Non profit:
+    -  IT given proce points for Dynamic 365, Power platform, Microsoft 365, linkedin and Azure
+    -  for samm NGOs Plan starts at zero cost and increses as organisation scales up
+    -  Azure gives yealy $3500 grants for NGOs, need to apply
+  - Student: for student co credit card required and also get free credit of $100 with 25 products
+  - Individual: Sign up for free trial and 1 year free serivces and $200 creadit
+- Cost of Azure services:
+  - We can see cost in estimate tab when we are selecting services like, VMs, DB servers, licences. We can also see variuos proces option like pay as you use or buy service for fixed period say 1-2 years with discount.
+  - We can also set limit on billing after that price Azure gets disabled.
+  - The broad world of Azure services: You can just oversee the services Azure provides under different categories like IoT, Storage, DevOps and so on.
+## Hosting
+- Azure app services overview:
+ - Hosting Options
+   - Azure app service(PaaS): Best app service
+   - Service Fabric(PaaS): good for microservice architecture, makes it esy to package, manage and deploy contenarize or non-containerized microservice
+   - Azure Virtual Machine(IaaS): in case you want to manage your VM. we can just migrate existing app on VM. You are responsible for configuring, maintaining and patching of environment.
+ - App serivice is a hosting service for web applications, REST APIs and mobile backends.
+ - It provides platform abstraction built upon Azure VMs layer. OS and webserver are abstracted. We can choose from preconfigured servers(linux\windows)
+ - Benefits:
+  - Write app in multiple languages
+  - Support DevOps tooling like docker hub, Azure container
+  - Security and complaince: App service is ISO, SOC and PCI compliant plus you can create IP restriction and manager acees entities.
+  - More than 50 connectors for SaaS provider
+- Website and webapp
+  - When we create a webapp on app service Azure creates:
+    - Virtual machine
+    - Install pre configured OS
+    - Install pre-configured webservers
+  - Next step is create content depndeing on type of web app and deploy it using VS Code or VS Studio
+  - We can jump start using exiting app serive templates
+  - Blow files are deployed at web app or websites:
+    - Markup(HTML, CSS)
+    - Content(Image, audio, video)
+    - Client side scripts (Javascript)
+    - Server side code (PHP, C#)
+- App service and plan
+  - App service plan means preconfigured environment
+  - A App service plan can have multiple App sevices hosted in it
+  - Billing is made on App service plan and not on app service.
+  - We can add mutiple app service in an plan it will not affect cost bit the performance
+- Build a app service on Azure
+  - We need to create a service plant if one not already there or you want to create a new one
+    - Goto Serivice plan option in azure portal
+    - Create a service plan, give a name to service plan under "resource group" text box, select OS and region, select a free tier as dev/Test under section procing tier then click on "review and create"
+  - Goto "App service" Then click on create button to create a app serivice
+    - Select app serivice plan under "resource group" dropdown
+    - Give unique name as this will be your end point
+    - Select language (Python), OS and region
+- Edit and publish web app files: Using Visual studio publish yuour website to Azure
+## API and API Management
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
