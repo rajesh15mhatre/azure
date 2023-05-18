@@ -237,7 +237,7 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
 - What is a differnce between a trigger and a binding
   - Trigger is an execution initiator, and a binding is an input or output relationship
 ## Azure Storage
--
+- 
 
 
 
