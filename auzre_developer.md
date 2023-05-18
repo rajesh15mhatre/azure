@@ -146,4 +146,103 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
     - Select language (Python), OS and region
 - Edit and publish web app files: Using Visual studio publish your website to Azure
 ## API and API Management
+- Host API on APP service
+  - API hosted on webapplications
+  - There is no difference between API APP vs WEB APP 
+  - Two parts of API apps
+    - App service
+    - REST components written in any laungage
+  - Extra features
+    - Use Swagger(OpeanAPI) to document the interface.
+    - Azure support of CORS
+    - Which is a http serive enabled to access the resources of another domain
+    - Securely let access API of other domain
+- Manage API with Azure API
+  - Bussinees can have internal and partners API
+  - Both should be securely accessible to developers and partner respectively
+  - Goto 'all resources' in console search for API Management Service under 'Type' column to select a service
+- Quiz
+  - Which HTTP feature allows an apploication in one domaon to use resources in another domain?
+    - CORS
+  - In addition to the App Service, what else must you provide to build an API App
+    - The REST component
+  - Unlike internal API, partner API ______?
+    - needs to be discoverable by partners
+  - How can you easily manage different active version of an App Service?
+    - Use deployment slots
+  - Which trigger can you use in serverless code for application instrumentation?
+    - event hub trigger
+  - Why would you use durable function instead of plain serverless function?
+    - for function chaining
+## Code and workflow
+- Azure fucntion don'e need any infrastucture to run it runs serverless
+- Fucntion has below choice of languages:
+  - C#, java
+  - Javascript, Typescript
+  - Python
+  - Powershell
+  - Go 
+  - Rust
+- Bring your own dependency using
+  - Nuget
+  - npm
+- Integrated security
+  - Proctect code with OAuth providers
+  - Azure Active Directory
+  - Microsoft Account
+  - Facebook
+  - Twitter
+  - Google
+- Fucntion is run is triggered by an action
+  - HTTP trigger: start fuction on http request
+  - Timer trigger
+  - Cosmos DB trigger: when document are added or updated in the database
+  - Blob trigger: we an trigger function when blob is added to a container
+  - Queue trigger: triggers as soon as messege arrives in Azure queue storage
+  - Event grid trigger: Subscription based event triggering 
+  - Event hub trigger: used for user experice or workflow processing
+- Binding is declarative way to conncet to data from within your code
+  - Input binding is for function input data
+  - Output binding is for function output data
+- Trigers and bindings are let you aviod hard coding details of the services the you are working with
+- Azure functions are lightweigth, serverless and no need to setup server or either infrastructure
+- Azure functions are compute on demand and only pay as you compute. No resource are consumed when not running
+- Powerful workflow with Logic app
+- Azure logic app and power automate are excel at automating business workflow
+- Logic app is superset of power automate it helps automate orchestrate tasks, business process and workflow.
+- Example:
+  - Move uploded files from FTP server to Azure storage
+  - Mobile app - Send EDI document to retailer when delivery completes
+  - Monitor tweets for a specific subject; analyse the sentiment; add to team planner to review
+  - Monitor email for subscription request; flag for approval; when approved, add customer to mailchimp list.
+- Connectors are the heart of logic apps, it is a proxy or a wrapper around the API that allows underlying service to talk to power automate and logic apps.
+- Two types:
+  - standard connectors
+  - premium connectors: higer rate
+- Example connectors
+  - Office applications Outlook, OneDrive, SharePoint
+  - SQL Server, Amazon redshift, MySQL
+  - Mailchimp, Bitly
+  - Social Media: Facebook, Linkdin & so on
+  - Google Apps: Calender and mail
+- A connector has triggers, actions and definitions
+- Triggers:
+  - The event that start logic app workflow
+- Action: is work to perform in logic app
+- Definition: Properties exposed by connectors
+- Logic app can be use both on-premises or on cloud
+- Quiz
+- Why would you use Logic Apps instead of Power Automate
+  - Logic apps give you more flexibility and control
+- What is a differnce between a trigger and a binding
+  - Trigger is an execution initiator, and a binding is an input or output relationship
+## Azure Storage
+-
+
+
+
+
+
+
+
 
