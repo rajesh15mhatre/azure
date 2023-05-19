@@ -367,8 +367,69 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
     - Velocity
   - Why have desibers produced non-relational databases?
     - To have faster access to and from large and diverse data sets.
-## Azure Active directory (AD)
-- 
+## Infrastructre
+- Azure Active directory (AD)
+  - Cloud based Access and indentity management systems
+  - Integrates with your on-premises AD
+  - Ot it can act as the only AD
+  - Good choice for startups the only user Office365 and oter SaaS Applications 
+- Benifits
+  - Provides SSO
+  - Scalable
+  - Programmatic access viw REST and OPData protocol
+  - INtegrte with THird party Google-Linkedin
+ - Network components (IaaS)
+  - Under networking you can see various Infrastructure
+  - Virtual Network Called as VNet
+    -  REpresentation of networek on th cloud 
+    -  Isolated your subscription
+  -  Inside VNet
+    -  VMs
+    -  Storage Account
+    -  DBs
+  -  Expresse Route 
+    -  Create private networks to data centers
+    -  Connectorion are routed over telecom fiber
+  - VPN gateway 
+    - Create AN encrypted tunnle for the rtaffice between computers
+  - :Load Balancing
+  - Distributes network trafic across a grpup pfservers
+  - Supports inbound and outbound secnatios
+  - Supports onbound and outbound scenarios
+  - Low latency, hoigh throughput
+  - TCP and UDP
+- IP address
+  - Public address: used to communate internet Azure client facing networks
+  - Private address: used to communicate within Vnet
+- Firewall
+  - A firewall minitoes and contrils network trafficv bsased on security rules
+  - Azure firewall is a firewall service that protects your VNet resources
+- Build the Azure networking with VM
+  - VMs
+    - standalone 
+    - part of a virtuall network of machines
+  - VM OS family
+    - Windows/Linux
+    - General purpose
+    - Compute optimized
+    - 'Memory Optimized
+    - Storage optimized
+    - GPU
+    - High performance compute
+  - Use Remote Deesktop ti connect VM
+- Quiz
+  - What benefil dies Azure Actuve Directory provides?
+    - Access control
+  - Your typical applications are small but requier a long time for calculation. Which type of VM should you choose?
+    - compute optimized
+  - Why would you use Azure ExpressRoute?
+    - to have private and fast communications over dedicated lines
+  - Which Azure network component is used to distribute network traffic accros a group of servers?
+    - load balancer
+  - Which statement is true regarding Azure Active Directory?
+    - It offers programmatic access
+## DevOps
+-
 
 
 
