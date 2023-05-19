@@ -288,6 +288,86 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
   - Which storage type is useful for storing video files?
     - Blob
 ## Azure Databases
+- Quick tour
+  - Azure SQL DB
+    - RDBMS, T-SQL, ON Cloud
+    - Predefine schema
+    - Stored procedures, UDFs
+  - Azure synaps analytics
+    - It is based on SQL DB
+    - SQL DB is for trasactional and Synaps is Optimized for reporting 
+  - Data lake store 
+    - IS Ware house for files
+    - Extends blob storage
+    - No data schema
+    - best for storing native files
+    - optimized for reporting and analytics
+  - Cosmos DB
+    - Future if microsoft DB
+    - Multimodel- document, key-value, wode column, graph
+    - flecoble system- open to new DB types
+    - powerful and optimized for global distribution
+    - automatic replication
+    - Multiple consistency modes
+    - Fast response
+  - Azure postgrs and MYSQL
+    - Open source popular DB
+    - Postgrs is an object relational DB
+    - MySQL is a traditional DB
+  - Table storage
+    - NoSQL for key value format
+    - store tabular data ay immense scale
+    -  Older but stil useful
+    -  Better for regional scale
+- Multimodel noSQL DB
+  - Cosmos is miltimodel db
+  - Non Relational goal
+    - TO handle big data
+    - Volume:
+      - Lage amount of data
+      - Size of disk 
+    - Velocity
+      - how quickly data can be collected and processed\
+      - Speed of query
+    - Variety
+      - Many data types
+      - Modern data doesn't fit in relational schema
+    -  Solution: ti build betterdatabses 
+    -  Cosmos DB
+      -  Big data DB engine
+      -  provide unlimited sclae of storeage
+      -  provides unlimited scale for throughput
+      -  Avalible at global scale 
+      -  Autimatic data indexing - you can alsi specify indexes
+      -  Its started as DOcument DB for Json
+      -  It's stors data called as automs
+    -  Consmos DB API
+      -  JSON - SQL API
+      -  Graph - Gremlin API
+      -  Key value - Table API
+      -  Columnar - Cassandra API
+      -  Data is stored the same; use the API you like to manupulate the data
+- Cosmos DB in action
+  -  storage for differnt APIs
+    -  SQL API has - conatainer
+    -  gremline has - graph
+    -  MongoDB API - collection
+    -  Cassandra and table API - table
+  -  Create cosmos DB
+    -  select resource group ->  SELECT SQL 
+    -  Give conatainer name and thorughput level
+    -  If JSON docuemnt don't ahve ID Azure will create it
+    -  We can write SQL on container name 
+- Quiz
+  - You have a huge collection of socuments, images, audio fiels, and video fiels that you need to store for occasional access. Which tool bestfits your needs?
+    - Data Lake
+  - You must specify a partitional key when you set up a new Cosmos DB, WHat is its purpose?
+    - Its soecified how to split up data across storage.
+  - Stock trading systems rwquier very fast responses to data query. Considering the three Vsm this a challenge of ____:
+    - Velocity
+  - Why have desibers produced non-relational databases?
+    - To have faster access to and from large and diverse data sets.
+## Azure Active directory (AD)
 - 
 
 
