@@ -237,8 +237,58 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
 - What is a differnce between a trigger and a binding
   - Trigger is an execution initiator, and a binding is an input or output relationship
 ## Azure Storage
+- Quicke tour
+  - Its container for your data
+  - type of storage
+    - Blob, file, queue, Table and disk
+  - Blob Tiler level on data access: 
+    - Hot: Frequent, Cool:infrequent, Archive: Rare
+  - FIle Share:
+    - NEtwiek fiel shates
+    - UNseful foe reolacing fiels servers
+    - USe for lift ans shift
+    - Each file has a URL endpoints
+   - Queue
+    - Srote list of messges
+    - Asynchronous messges
+  - Disk Storage
+    - Disk for VMs, for hight I/O
+    - Supports VHD
+    - Share across multiple VMs
+    - chose from Std HDD/SDD
+  - Table storage
+    - Key-value storage
+    - REplaced with Cosmos DB Table API
+  - Storage command feraturtd
+    - Dsta srencrutrd as rest
+    - Access ptitrcted by authentication and authorization
+    - Data is automattically replicated
+  - AQzure BAck up for storeage
+  - Azure Data Lake to store unstrucutr and structured data
+- Blob (**Binary Large Object**) storage:
+  - Every bolb file has URL
+  - Containaier in bloc is kind of direcory
+  - Blob name are case sensetive
+  - Storage account and container names atr always lower case
+-  Blob Example:
+  -  Goto console -> all resources -> storage accounts -> create a storage account
+  -  select storage account -> add image in blob 
+-  File Share example
+  - Click on file share -> under storage account -> give name 
+  - Upload and select file to share
+  - Click on connect button seletc OS -> authentication option
+  - copy powesheel script and run it on powersheel window and a z drive will appear for ready to use
+- Quiz:
+  - in this storage account, the user sepatated different blob types into various areas, What are these ares called?
+    - container
+  - Which statement is tue trgarding blob storage?
+    - a caintainer can include an unlimited nunbers of blobs.
+  - Which type of storage is most apptoptiate to serve a mixture of images, text, and audio?
+    - Blob
+  - Which storage type is useful for storing video files?
+    - Blob
+## Azure Databases
 - 
-
 
 
 
