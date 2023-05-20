@@ -591,7 +591,20 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
     - Build and train custom ML applications in Azure.
 
 ## Other Serivces
-- 
+- Messaging with Event Grid, event Hub or Event services Bus
+  - Prodducer --> message --> Consumer
+  - Message category
+    - Command: Azure service Bus
+      - The producer expects the consumer to perform an action
+      - The producer expects the command to be delivered only once and never processed more than once.
+      - Exampple transferring money safely between account
+      - Bus is a brokered message
+      - Queue: 1 producer-1 consumer, 
+      - Topic: 1 producer- many consumer'
+      - Supports transactions, ordering, duplicate detection
+      - Guaranteed deliery, even after application crashes
+    - Event: The produce inform consumer somethign happend
+    - 
 
 
 
