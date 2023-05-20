@@ -429,7 +429,89 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
   - Which statement is true regarding Azure Active Directory?
     - It offers programmatic access
 ## DevOps
--
+- Enhance development and deployment with Azure DevOps
+  - DevOps Principles
+    - Shared Planning
+    - Shared COde base
+    - CI
+    - Test driven techniques
+    - automated deplyments
+  - DevOps as a Serice/Cysle
+  - Automate everything
+    - Code testing
+    - Integration: test code build 
+    - Deployment
+    - Environement provisioning
+  - Microsoft adopted DevOps years ago its called DecOps
+  - A suit of sevices
+    - Azure boards: 
+      - Kanbab boards
+      - backlogs
+      - team dash board 
+      - reporting
+    - Azure pipelines
+      - CI/CD
+      - INtegrate with popular source contril system, Git
+      - Build agents for OS
+      - Integrate with VSTO App center for mibile deployment
+    - Azure Repos
+      - supports Git
+      - Team foundation version control TFVC
+    - Azure test plans
+      - Test for web and desktop apps
+      - Manaul test
+      - exploratory tests
+    - Azure artifats
+      - Interated package management
+      - Create and share packages for team
+      - works with NuGet, npm and maven
+      - works woth public and private sources
+- Simlplify app deployment using containers
+  - Container isolate p\app into lightweight execution environment, popular is docker
+  - Docker is built into Azure it is available for any app service
+  - Benitfit
+    - Consistency between dev,test and prod envronments
+    - Simple updates
+    - easy collboration with coworkers
+    - eliminate setup and config of dev env
+  - Opertion
+    - side-by-side apps in isolated env
+    - streamline app delivery
+  - To enable docker support justb select docker checkbox while creating app service
+- GitHub and Azure
+  - Git is a distributed source control system
+  - GitHub is a host site for remote repositories
+  - GitHUb freatures
+    - Github offers many complementary serivce
+    - Collaboration and community, we can pull repos to be updated on code repo
+    - CI/CD, project managementAutomation
+    - Security- MFA, private repos, code scanner for vernability
+    - Project management tools
+  - We can connect Azure board with GitHub
+  - Azure pipelines acan build and validate upon GitHUb pull request
+  - Azure and GitHUb
+    - Github actions for Azure
+      - Azure app service
+      - FUnciton
+      - Key valult 
+      - storage
+  - If you choos to use Azure still you can use GitHub as remote code repository
+- Quiz
+  - What is a pull request?
+    - Submitting code changes to public projets
+  - How should you use GitHub and Azure or Azure DevOps together?
+    - There are nultiple intefration points frim which to choose
+  - How do container make it easier for developer to collaborate with coworkers?
+    - The container altready includes all necessary depenkdencies.
+  - Why do developer favour Docker containers?
+    - They eliminates the need for environment preparation
+  - Which Azure DevOps service offers continuous integration?
+    - Azure pipelines
+  - Which DevOps tool provides up-to-date deployment of your latest improvements?
+    - pipelines
+## Machine learning and artifical intelligence
+- The Azure AI family
+  - 
 
 
 
