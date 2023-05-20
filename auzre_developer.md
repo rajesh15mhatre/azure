@@ -594,7 +594,7 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
 - Messaging with Event Grid, event Hub or Event services Bus
   - Prodducer --> message --> Consumer
   - Message category
-    - Command: Azure service Bus
+    - Command **Azure service Bus**
       - The producer expects the consumer to perform an action
       - The producer expects the command to be delivered only once and never processed more than once.
       - Exampple transferring money safely between account
@@ -603,8 +603,24 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
       - Topic: 1 producer- many consumer'
       - Supports transactions, ordering, duplicate detection
       - Guaranteed deliery, even after application crashes
-    - Event: The produce inform consumer somethign happend
-    - 
+    - Event: The producer inform consumer something happend
+      - Discrete Event (**Azure Grid**): Is standalone
+      - Series Event (**Azure Hubs**): continuose stream of events
+    - Event grid
+      - Discreate event messages 
+      - handles event distribution
+      - Good for event driven, reactive programming
+      - Uses a publish-subscriber(pub-sub)model
+      - Built for massive scale
+    - Event Hubs
+      - series event messages
+      - Good for telemetry and distributed data streaming
+      - Ex: solar farm, collect sessor data every 5 sec
+      - Gather information from IoT devices, apps, social feeds
+      - Data ingested into hub
+      - Store or transform into any Azure data store
+    - Three services acan be combined and integrated
+      - 
 
 
 
