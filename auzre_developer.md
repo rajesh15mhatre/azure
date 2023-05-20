@@ -511,7 +511,87 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
     - pipelines
 ## Machine learning and artifical intelligence
 - The Azure AI family
-  - 
+  - AI
+    - Speech recongnition
+    - Automatic writing
+    - Face recongnition
+  - ML
+    - Forecast trends and outcomanes from eisting data
+    - FInd patters in the data set
+    - applicaiton learn without exiplicit programming
+  - cognitive services
+    - Build intellifgent algotithmn to see. hear, speak, understand, and interpret your user needs.
+    - Bot serivice: provide tools to buid, test, deploy, and manage intelligent bots
+    - Congnitive serach: Add rich search experience
+- Cognitive service overview
+  - Cognitive: the mental action of acquiring knowledge and understanding through thought, experience, and the senses
+  - Vision vs VIsual cognition: Vision the image we see and conginition is the how brasin proccess that image
+  -  Congitive service: Use computers to acquier knowlede and understanding through state-of-the-art algorithum
+  -   Goal: to help the developer create applications that can see, hear, speak, and uderstand even began to reson
+  - Congnitive Services
+    - Vision: works with image and video
+  - Speech
+    - Converting test to speech and translation
+  - Language
+    - Analyse conversation text
+- ML Overview
+  - Familier Data sceience tools
+    - Pychsrm, Jupyte, VS CODE
+  - Integrate with popular frameworks
+    - TenserFlow, PyTorch, scikit-learn, ONNX
+  - Azure Genomics
+    - Speciliased version of AI 
+    - Built accelerate research time
+    - Meets ISO security, quality, and privacy standard
+    - HIPPA compliant
+- Bots overview
+  - Bot services
+    - Mimics human conversation
+    - We can create a Azure bot unser console
+- Search Overview
+- Search service
+  - Build a search corpus containing only your data 
+  - Define an index of serch values
+  - Push JSON content to Azure
+  - Leverage AI-powered indexing to pull info from docs
+  - Include features like syninyms auto-complete
+  - Supports text analysis for "did you mean?"
+  - Add geo-search for "find near me"
+  - Non-English full text 
+  - Search rank
+- Explore the vision service
+  - Computer vision 
+  - Face recongnition
+- Explore the speech service
+  - Speech to text, text to speech, speech transition, speaker recongnition
+- Quiz
+  - Which phrase best describe AI?
+    - Emulation of human reasoning
+  - How would the text-to-speech tool convert the SSML "say-as interpret-as="characters".,/sayas>"?
+    - Three three
+  - What do all congnitive service have in common?
+    - They use knowledge to interpret information
+  - Unlike the computer vision serivce, what can the Face API service do?
+    - Verify whether one object appears in another picture
+  - What does Azure congnative service hepl you implement?
+    - intellligent algorithum to understand and interpret user needs
+  - You routinely have images in which you needs to find tools that have been left behind ty a job site, Which method should you use?
+    - Analyse image
+  - Which statement regarding the search service is fake?
+    - The search can only be done in English
+  - How can including Azure Search in your application make it easier to use?
+    - User can find synonum and other language translation easily
+  - Why would you use a bot instead of the normal command-line or shell interface?
+    - to mimic natural conversation
+  - Which building block of the machine laearning pipeline comes after parameter tuning?
+    - Experiment
+  - What does the Speech Translation feature do?
+    - Integrate real-time speech translation into app
+  - Younhave a massive but unique ML requierment that does not fit any of the Azure AI or ML tools How should you procced?
+    - Build and train custom ML applications in Azure.
+
+## Other Serivces
+- 
 
 
 
