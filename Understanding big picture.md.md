@@ -619,8 +619,158 @@ Resourse: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-de
       - Gather information from IoT devices, apps, social feeds
       - Data ingested into hub
       - Store or transform into any Azure data store
-    - Three services acan be combined and integrated
-      - 
+    - These three services acan be combined and integrated
+- Mobile notifications with notification hub
+  - it is mobine push notifiation engine for quickly sending millinons of mobile devices
+  - Ex: send code to mutifator authenticator, send location-based coupons to intersted users OR a mapp app sends a traffic delay notificaiton.
+  - Supports: IOS, Adndriod, Kindle
+  - Supported notification services
+    - Apple push notification
+    - Google Cloud Messging
+    - WIndows push nothification
+    - MIcrosoft push notification
+  - Backend in any supported language
+    - .NEt, php, java, Node.js
+  - Filter Audience by tag
+    - Broadcast push notifications to everyone 
+    - Brodcast to a filterd subset
+  - Desinged for massive scale
+- Azure mefia services to encode and stram media
+  - Provides video encoding and streaming services
+  - Media services area
+    - video encoding
+      - Prepare video content for consumption
+      - Compress vodeo to reduce storeage and bandwith
+      - Encode to multiple formats
+      - High-perfirmance live encoding
+      - Create thumbnails, etc
+    - streaming
+      - Scalability to handle all audience sizes
+      - Stream static or live content
+    - Video indexer
+      -  We upload videos and get back the insights
+      -  It identifies spoken language - 9 language
+      -  Audio transcription- 12 languages
+      -  Adds closed captioning
+      -  Noise reducetion
+      -  Speaker identification
+      -  OCR - extrats text shown on sign and on-screen document
+      -  Extract facial and other key thumbnails
+      -  Emotion detenction
+      -  Translation to over 54 languages
+    - content protection
+      - Supports multiple DRM platforms
+      - Encrypts media on the fly
+      - Full integration with Azure AD
+    - Azured CDN( Content Delivery Network)
+      - it works seamlessly with Azure services
+      - Massive capacity
+    - Azure Media Player
+      - Free player
+      - Supports many browsers and devices
+      - Play back multilanguage audio streams
+      - Full support foraccessibility: Captions, interation with mouse, touch
+  - Azure media services is a broadcast-level service that provides video-realted services for organisations large and small.
+- Mange IoT devices
+  - What to do with lots of IoT data?
+  - 1 bulding stores two billion of data points every months '
+  - IoT on Azure
+    - IoT Central:
+      - SaaS: one location to connect your devices
+      - REduce the cost to deveop, manage, and manitain system
+      - Built with enterprise-grade IoT solutions.
+      - Monitors devices; can manage million pf devices
+      - Use pre built templates for quick implemantation - energy, healthcare, governsment etc
+      - costomizable portal
+    - IoT Hub: 
+      - Paas - lets develop your own apps
+    - IoT Edge - built on top of Azure IoT hub
+      - Move workloads from server to devices
+      - Three components: 
+      - Runtime
+        - Install and updates worloads on device
+        - Maintaons scurity standards
+        - Keeps module running 
+        - Rports device health to cloud
+        - Manages communication to downstream Edge devices
+    - Digital Twins: read docs
+  - VDI( Virtual desktop Infrastructure)
+    - Way to provision computer images for organisations
+    - Easy to propogate a consistent OS image to users
+    - better seurity
+    - no loss of data if laptop creashes
+    - Windows 10 enterprise mutisession is new VM
+  - Mananged hybrid system with Azure Arc
+    - Cloud computing
+      - Pubic
+      - Private
+      - Hybrid: 85% use hybrid
+    - Azure arrc is news tool to manage VMs it repalces Azure stack and Azure pack
+    - Azure Arc integrate woth Azure resource manager(ARM) For 
+      - Access and security
+      - Automation
+      - Environment
+      - Inventory and organisation
+      - Governance
+      - Complaince
+    - ARM manages the syhste, and Arc brings private cloud infrastructur to ARM
+    - Arc enables the private cloud by installing 1 or more Arc agents.
+    - Agent connects and sync the privaet cloud to Azure portal
+    - Key Pount: Arc works wwith the hardware or cloud providers you alredy use.
+    - Manage it with 
+      - Azure portal, CLI or REST API
+  - Azure backup and recovery
+    - Agent and serevices
+      - Microsoft Azure reconvery Services(MARS) agent
+      - Microsoft Azure Backup Server(MABS) agent
+    - On-premises you canbackup files, Foldersm and system state VM
+    - BaCKUP CLOUD SERVICES
+      - VM, File share, Managed disk, blobs, SQL server Db and an azure VM and postgrs db
+      - baCKUP IaaS VMs
+      - Scalable storage
+      - Data security: data encrypted in-transit or stored
+  - Marketplace
+  - Rest of servies:
+    - Analytics
+    - Security - builtin
+    - Security - key vault
+    - cost management tool
+    - Azure migrate
+    - Azure resource graph
+    - Azure blueprints
+    - Azure Orbital
+    - Azure digital twins
+- Quiz
+  - Which Azure serivece cetralizes the storage of application?
+    - Key Vault
+  - You have an antiquated in-house data center that you want to transfer to the cloud. Which Azure service should you explore?
+    - migrate
+  - What is one data type that the Azure Backup service cannot backup?
+    - MySQL Db
+  - WHich scenario would be best served by a notification hub?
+    - warning of an impending hurricane landfall
+  - How do event message differ from command message?
+    - They inform the consumer that something happened
+  - You have a services that monitors that the locations of all your delivery trucks over the course of a day. Which method is most suitable for collecting the information?
+    - event hub
+  - Which media service category provides closed captioning?
+    - indexing
+  - For what purpose so Azure Notification Hubs use templates?
+    - localization
+  - Why would you yse virtual desktop rather than individual machine?
+    - To make security and maintenance easier
+  - You have a working IoT system but want to migrate to one in which more t=of analytical work is distributed to the devices, How should you proceed?
+    - Implement Azure IoT Edge,
+  - What is common between the IoT central and IoT hub services?
+    - They are both built on solid Azure core.
+  - How dooes the cost of Azure backyup sclae with use?
+    - You pay for the amount of storage you use.
+  - WHich statement is true about azure Arc?
+    - It brings private cloud infrastrucuter to aure resource manager.
+  - How does Arc make managing hybrid system easier?
+    - It brings your privaet cloud into the Azure resouce manager.
+      
+      
 
 
 
