@@ -41,3 +41,96 @@
 - Employing a strategy called _____ regions, you can take advantage of features like automatic replication and strategically executed maintenance.
   -  Paired
 # 3.Azure app Service
+## What is Azure app service
+- HTTP service to develop WebApp and API 
+- Scaling Up : handling higher loads with one instance
+- Scaling Out: Increases number of instances
+## Create app service to host an API
+-open  CLI
+-Create a plan 
+  - az appservice plan create --name dev-cakes-api --resource-group dev --sku FREE
+- Create a webapp
+  - az webapp create --resource-group dev --plan dev-cakes-api --name cakes-for-all --deployment-local-git
+- After csuccessful executioon of sommand you will see a JSON output
+- Copy deploymentLocalGitUrl from JSON for git URL where you can push your api code
+## Quiz
+- What's the difference between scaling up versus scaling out, on the context of Azure App Services?
+  - Scaling up means enhancing your existing infrastrucutr while scaling out means increasing number of instances you hace to work with
+- Azure App service only supports .NET and .Net Core
+  - False
+# 4. Azure storage
+## What is blob storage
+- Blob storage is suitable for meadio and document files
+- can handle backup and disaster recovery
+- It's cheaper
+- Type of storage
+  - Hot: higer storage cost, lower access cost. its for frequntely used data
+  - Cool: Modarate storage cost and modarate access cost. it for data that need access occassionally 
+  - Archival: Low storage cost, high access cost. Its for rearly accesed data 
+- Blob tier
+  - PErmium performance: For quick and continuous interaction, E.g. Map app data
+  - Standard :usual tire
+## Cosmos DB
+- NO SQL with 4 data model
+  - Document, Graph, Key value and Wide column
+- Available in all regions
+- Auto index data
+- You can scale up your storage and throughput separatly 
+- Limitation
+  - Sorting on multiple attributes
+  - sorting on alias 
+  - Sorting on computaiton values
+- Scaling Cosmos DB
+  - Scale with more machines
+  - All nodes can accept changes
+  - NO single source of truth
+  - Order can't be ensured
+  - Rollback are challenging
+## Azure SQL
+- Can be hosted and managed on cloud
+- Hosted infra:
+  - Run on Azure VMs
+  - Greater control
+  - Customizable
+  - Quick migration
+- Azure SQL DB and Manage SQL
+  - Azure handle maintenane
+  - Latest updates
+- Hyperscale
+  - Remove practical limitaion, 100TB scale in minutes
+- Elastic Pool
+  - Databases that share set of resources
+  - Cost effective ways
+- DB servers
+  - Managed DB and elastic pools
+## Quiz
+- CosmosDB is a great alternative to SQL Server and SQL database.
+  - False
+- If you want greater control over the database engine, which option from Azure SQL would you choose?
+  -  SQL server runninf on an Azure VM
+- In which scenario would you choose Blob Storage over Files Storage?
+  - to direcly serve images or large documents to browser
+- Cosmos DB is classified as a foundational service in Azure, which means it's available in every region.
+  - True
+- What kind of data does blob storage primarily deal with?
+  - Large, unstructured
+# 5 Azure Fucnitons
+## What is Azure functions
+- code and configurtion file are main componantes of funciton
+- for function2.x all fucntion for a app should be written in same language
+- 2 pricing model
+  - Consumption plan
+    - ONly pay when running
+    - Automatically scales
+- App service plan
+    - Need to host custom image
+    - Already have VMs running other app services
+- Get started
+  - Download azure function extension in VSCode
+  - npm install -g azure-fucntions-core-tools
+  - 
+  - 
+
+
+
+
