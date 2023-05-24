@@ -1,3 +1,9 @@
+# Part of Getting started as Azure developer 
+Resource: https://www.linkedin.com/learning/paths/getting-started-as-an-azure-developer?u=2110540
+# Getting started as Azure deveoper
+Resource: https://www.linkedin.com/learning/azure-essential-training-for-developers/azure-resource-manager-templates?autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A5b0728e5498e4ef31386867c&u=2110540
+
+
 # 1.Cloud fundamentals
 ## Cloud models and service types
 - Public cloud: own and opearted and managed by cloude providers
@@ -114,22 +120,146 @@
   - True
 - What kind of data does blob storage primarily deal with?
   - Large, unstructured
-# 5 Azure Fucnitons
+# 5 Azure Funcitons
 ## What is Azure functions
-- code and configurtion file are main componantes of funciton
+- code and configurtion file are main componentes of funciton. Mostsly denoted as function.json
+- Imp part of json config is bindings --> derection, type and name
+- e.g. http triggers: generate a coupen when customer complete purchase
 - for function2.x all fucntion for a app should be written in same language
-- 2 pricing model
+- Two pricing model
   - Consumption plan
-    - ONly pay when running
-    - Automatically scales
-- App service plan
+    - Only pay when running
+    - Automatically scales instances as needed
+  - App service plan
     - Need to host custom image
     - Already have VMs running other app services
 - Get started
-  - Download azure function extension in VSCode
+  - Download azure function extension in VSCode/Visual studio
   - npm install -g azure-fucntions-core-tools
-  - 
-  - 
+## Create a Function with a BlobTrigger
+- Ex: Sending upload confirmation notificaiton to user
+- Function to make copy of file into backup 
+  - Click create a resource
+  - Search for fuction app
+  - Choose resource group
+  - Choose name
+  - .Net core as runtime stack
+  - Default region
+  - CLick next
+  - Select storage acccount or create one
+  - Select OS WIndows
+  - Plan type consumption
+  - Enable applicaiton insigth ON
+  - Click create
+  - Your fucniton is ready 
+  - Goto notification -> goto resourse
+  - You can also find it in all resources and pinning it to dashboard
+  - Goto fucniton --> expand fucntion and click on +
+  - Choose in portal and continue
+  - Select more Template --> search for blob storage trigger 
+  - Install the extension if needed
+  - Give name to function --> file_uploaded
+  - add Path --> upload/(name)
+  - Select  Storage account connection 
+  - Click create
+  - Need to add in and out binding in function
+## Other function trigger type
+- TimerTriggers
+- QueueTiggers
+- CosmosDBTriggers
+- EventGridTriggers: resize image upload uploding to blob
+- EventHubTriggers: For Big data Workflow and IoT
+## When to use Durable Functions
+- suitable if you have sequencial steps depends on previous steps
+- Good orchestrtor
+- Activity Funciton: 
+- Orchestrator Funciton: Manages the flow of associated activity
+- Non-DEterministic OPeration: Not adviced to use:
+  - DateTime.Now()
+  - Random.GUIDs
+  - Multithread operations
+## Quiz
+- Durable Functions perform better when you:
+A. generate random GUIDs
+B. use multi-threaded operations
+C. log dates and times using DateTime.Now
+D. avoid all of the above
+  - D
+- Which is the best trigger type to use with scheduled tasks or tasks that should be executed based on a specific interval?
+  - TimeTrigger
+- Durable Functions are preferred over regular functions when implementing long-running tasks or workflows with dependent steps.
+  - True
+- At a minimum, what do you need to create an Azure Function?
+A. Your manager's approval and the code
+B. A configuration file, the code, and an automated CI/CD pipeline
+C. A function.json file and the code itself
+D. A blob storage container and an app service
+  -  C
+# 6.Virtual Machines and Batch
+## Provision VM
+- Using portal
+  - Search VM -> click add
+  - Select Subscription
+  - Given name, region and imgae type
+  - Give -> admin credentials
+  - Inbound Ports
+  - HTTP 80, RDP 
+- USing CLI
+- Create resource group
+  - az group create --name eveen-more;legacy --locaiton centralus
+-Creaet VM
+  - az vm create --resource-group even-more-legacy --name older-legacyapp --imdage win2916Datacenter --admin-username older_legacy_admin --admin-password HereIsTHeLEgacyPassword1!
+- COpy public IP from output 
+- Run VMs
+  - az vm 
+## Azure resorce manager template (ARM)
+- Search and  Select custome deployment
+ - Always easy to use existing template and later modify it
+## Azure batch
+- Proccessiong lot of data in batch 
+- Ex: compress 2k video files
+  - Create azure storage account 
+  - Write compression script and upload to storage account
+## Quiz
+- When using Azure Batch, you have to use the default number of compute nodes.
+  - FALSE
+# 7. Containers and kubernetes
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
