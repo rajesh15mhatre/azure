@@ -224,9 +224,118 @@ D. A blob storage container and an app service
 - When using Azure Batch, you have to use the default number of compute nodes.
   - FALSE
 # 7. Containers and kubernetes
-- 
-
-
+- provides isolated environment to work app everywhere 
+- it store it as container image. we can create mutiple container using image
+- VM virtulise hardware whereas container virtualise OS that makes it lightweight and consumerless memory
+-  Kubernetese is container orchesration platform, take care of resource consumption, 
+## Create a managed Kubernetes cluseter
+- OPen Azure cloud shell
+- USe below command to create a cluster
+- az aks create --resource-group dev --name aks-west-us2-mycluster --node-count 1 --generate-ssh-keys
+## Create, Publish imgae to Container registry
+- Visusal Studio
+- Creawte a project suign Webapplicaiton templete by checking contanier option
+- Preprae web project 
+- CLick on main project folder and click on publish
+- Select container registry select existing one 
+- click ok
+- hit publish
+- Goto Azure all resource filter by conatainer registrhy 
+- Select registry -> services-> respository you will find container image
+## How many containers can you create from a container image?
+- How many containers can you create from a container image?
+  - as many as you want
+- Why are containers usually faster than virtual machines?
+  - They virtualize the operating system, rather than the hardware, which means they're much more lightweight.
+# Securing your application
+## Authentication options in Azure
+- Authentication: claim your identity by credintials
+- Third-party Authentication: Azure performs authentication
+- Authorization: Proves claim of access
+- Authorization occurs after authentication: ex a Auzre user do not authorize to use sepecif service
+- Azure suppport 5 identity providers:
+  - Azure AD
+  - Microsoft
+  - Facebook
+  - Google
+  - Twitter
+- Azure app services provides a built-in token store
+## Role-Based Vs Claim-based authosization
+- Role: Access determined by user or resource's role
+- Claim: Access is determined by user information
+- Claim based authorization is much better strategy
+## Azure key valut
+- We can store API key, Password, secrets in key valut
+- Also can be leveged using API
+## Quiz
+- If you store a connection string in the Azure Key Vault, how do you retrieve it once you deploy your application?
+  - through a request to the Key Vault API
+- It's much more secure to integrate with your own custom identity provider.
+  - FALSE
+- Which of the following is true:
+A. Coding against specific roles in your application makes it more flexible to change
+B. Authorization is usually more flexible when building around actions performed instead of the people performing them
+C. Roles, in the context of authorization, never change
+D. Claims-based authorization is usually the better authorization strategy
+  - BD
+# Monitoring Your application
+## Using Azure monitor
+- telemetry data (Logs, automated data) source:
+  - Application
+  - Operating Systems
+  - Azure monitoring data
+- Once data collected it splits into metrics and logs:
+- Application Insights
+  - Availibility
+  - Client Errors
+  - Server Errors
+- We can setup alert rule
+  - E.g: notification is cpu utilization > 90%
+## Application insights
+- How application are doing
+  - request rete, response time and failure
+  - user ans session count and retention
+  - we can also write a custom code
+  - first place to look in case of production issues
+## Quiz
+- What is the best way to use Application Insights?
+  - to diagnose the initial phases of a production issue
+- What two data types power all of Azure Monitor's functions?
+  - Metric and Logs
+# Optimizaing Application 
+- Azure Redis for catching
+  - cathing helps to store data withour need to fetch evrytime
+  - caching data stored into catch memory
+  - Cache-aside patter
+    - Loading data on demand into a cache from a data store
+    - Cache can be updated if data changes
+  - Expiration Rules: 
+    - Force updates data in the cache based on time
+  - content caching pattern
+    - grate of static content and does't change
+  - User session pattern
+    - Cookie : session ID, USer information
+## Azure conent delivery network (CDN)
+- A network of servers designed to distribute content more efficiently than a single server
+- Dynamic site acceleartion : 
+  - Helps deliver unchaced content more quickly
+  - It uses route optimization on netwsork to deliver the content
+  - Adapting image compression: automatically compress image based on internet speed
+  - Uses HTTPS
+  - Geo filter content 
+## Kubernets service scaling strategies
+- Explicitly specifying resources
+- set up delay scale up and down default is 3 min and 5 min respectivly
+- Cluster autoscaler: 
+## Quiz
+- Kubernetes detects changes in your resources that need to be made by checking the Metrics API.
+  - True
+- When content can't be cached, what feature does the Azure CDN offer to help with this kind content?
+  - Dynamic Site Acceleration
+- The cooldown values used in both the horizontal pod autoscaler and the cluster autoscaler cannot be customized.
+  - True
+- Which caching pattern is best for keeping track of unique information?
+  - User session caching 
 
 
 
