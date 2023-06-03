@@ -1,0 +1,31 @@
+- Ways to create Resource Group
+  - Using portal
+- -Use **Azure activity logs** to see recent changes
+- Get report of particualr resource group 
+ - go to resource group and cleick on edit columns to add what information you wish to see
+- We can create users under AD 
+- You Can bulk create 
+  - you get csv template which you need to fill in user detail and uolod it
+  - all new users will be created
+- dashboard is nice thing to arregne resdources to show on it
+- we can share dashboard with other users
+  - first need to publish dashbaord from **share** option
+  - Then we can manage the dashbaord users
+- Blue print allows us to grant access ro resource groups
+- policy manager 
+  - to enfore govenance
+- SCale out/ Scale down based on cpu usages in app service
+- dignose appservice 
+  - use dignosisi and solve problem in app service 
+- automated deployment in app service 
+  - goto deplyment server. chosse  repo and then wherever you brach is updated your app will be auto deployed
+- User **storage explorer** to see storage under different account
+- create certifiate fpr app 
+- From AD select app and cereawte new certificate and copy the key as its shown only once
+- securitydata - synamic data masking
+  - you can add mask on sepecific column of db tables
+- Subnet allows us to connect group of resource in Azure
+  - click on subnet-> add + select IP range-> save
+- Vnet is free service to manage traffic 
+- we can autoshudown VM with notification to save the cost 
+- sent email for varius alert like CPU usGE GOEA UP 90% 
