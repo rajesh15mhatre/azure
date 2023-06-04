@@ -28,4 +28,9 @@
   - click on subnet-> add + select IP range-> save
 - Vnet is free service to manage traffic 
 - we can autoshudown VM with notification to save the cost 
-- sent email for varius alert like CPU usGE GOEA UP 90% 
+- sent email for varius alert like CPU usages goes UP 90% 
+- grant developwer acess 
+  - goto to key valut -> access policies  -> add access policies 
+  - Select configuration and select group who need access
+  - we can soft delete which keeps deleted item for 90 days and we can recover that
+  - 
